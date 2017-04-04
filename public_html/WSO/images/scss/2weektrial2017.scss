@@ -1,0 +1,86 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+//
+// Load core variables and mixins
+// --------------------------------------------------
+
+@import "custom";
+@import "public_html/scss/custom";
+@import "public_html/scss/variables";
+@import "public_html/scss/mixins";
+
+@import "public_html/scss/print";
+
+// Core CSS
+@import "public_html/scss/reboot";
+@import "public_html/scss/type";
+@import "public_html/scss/images";
+@import "public_html/scss/grid";
+@import "public_html/scss/forms";
+@import "public_html/scss/buttons";
+
+// Components
+@import "public_html/scss/transitions";
+@import "public_html/scss/button-group";
+@import "public_html/scss/input-group";
+@import "public_html/scss/jumbotron";
+@import "public_html/scss/alert";
+@import "public_html/scss/media";
+
+// Utility classes
+@import "public_html/scss/utilities";
+
+//
+// Custom style starts here
+// --------------------------------------------------
+header{ background-image: url(../ApresSkiMain.png); background-size: contain; background-repeat: no-repeat; background-position: 0 100%  }
+header .jumbotron{ background: rgba(255,255,255,0.70); margin-bottom: 0; }
+header .jumbotron h1{ color: #920202; }
+header .jumbotron p{ font-weight: 500; }
+form{ margin-left: 5px; margin-right: 5px; margin-top: 5px; }
+form section.row { border:1px solid rgba(0,0,0,0.20); margin-bottom: 15px; padding:10px 5px; }
+form section.row h2{ color: #920202; font-size: 1.9rem; line-height: 0.8; }
+form section.row h2 span.text-muted{ font-size: 1rem; color: #333 !important; }
+form section.row hr{ border-top: 2px solid #920202; }
+form section.row .form-control[name="cds_cc_exp_month"],form section.row .form-control[name="cds_cc_exp_year"]{ width: 30%; display: inline-block;}
+form section.row .form-control[name="cds_address_1"]{ margin-bottom: 5px; }
+form section.row .has-danger .form-check.form-check-inline .form-control-feedback.error{ display: none !important; }
+
+@include media-breakpoint-up(sm) {
+	header{ max-height:349px; background-size: contain; }
+}
+@include media-breakpoint-up(md) {
+	header{ min-height:466px; background-size: cover; }
+	header .jumbotron{ background: none; margin-bottom: 2rem; }
+	header .jumbotron p{ background: rgba(255,255,255,0.80); }
+	form{ margin-left: 10px; margin-right: 10px; }
+	form section.row { margin-bottom: 10px; padding:20px 10px; }
+	input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+	    width: 60%;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+}
+@include media-breakpoint-up(lg) {
+	header{ min-height:621px; }
+	header .jumbotron p{ background: none; }
+	form{ margin-left: 15px; margin-right: 15px; margin-top: 15px; }
+	form section.row { margin-bottom: 15px; padding:20px; }
+}
+@include media-breakpoint-up(xl) {
+	header{ min-height:737px; }
+}
+@media (max-width: 540px) {
+	.form-check-label {
+	    padding-left: 1.15rem;
+	}
+}
+@include media-breakpoint-only(lg) {
+	.form-check-label {
+	    padding-left: 0.85rem;
+	}
+}

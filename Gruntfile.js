@@ -8,16 +8,11 @@ module.exports = function(grunt) {
       src: './tasks/*.js'
     },
     pkg: grunt.file.readJSON('package.json'),
-    jsonData: grunt.file.readJSON('./assets/data/data.json'),
-    allkeys: grunt.file.readJSON('./assets/data/allkeys.json'),
+    // jsonData: grunt.file.readJSON('./data/data.json'),
     replacements: require('./tasks/replacements'), // Regex for refactor task.
-    dir: '<%= pkg.settings.root %>',
-    filename: grunt.option('filename')?grunt.option('filename'):'missingfilename.html',
-    layouts: {
-      layout: 'default',
-      page: 'index',
-      style: 'app'
-    },
+    filename: grunt.option('filename'),
+    cwd: grunt.option('cwd'),
+    filestouglify: grunt.file.readJSON('public_html/'+grunt.option('cwd')+'/images/js/'+grunt.option('filename')+'.json'),
     createtaskrun: [
       'sass',
       'htmlbuild:default',
@@ -35,19 +30,10 @@ module.exports = function(grunt) {
   // grunt.registerTask('build', ['concat','uglify','less']);
   // grunt.registerTask('default', []);
 
-  grunt.registerTask('process', [
-    // 'inlinecss',
-    'frep',
-    'htmlmin:minify'
+  grunt.registerTask('default', [
+    'uglify'
   ]);
-  grunt.registerTask('export', [
-    's3:prod'
-  ]);
-  grunt.registerTask('import', [
-    's3:dev'
-  ]);
-  grunt.registerTask('clear', [
-    'copy',
-    'clean'
+  grunt.registerTask('uglify', [
+    'uglify'
   ]);
 };
