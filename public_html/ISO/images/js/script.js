@@ -1,0 +1,76 @@
+$(document).ready(function(){
+  $('.left-box button').on('click', function(){
+    $('.left-box button').removeClass('overlay');
+    $('.middle-box button, .right-box button').addClass('overlay');
+  })
+
+  $('.middle-box button').on('click', function(){
+    $('.middle-box button').removeClass('overlay');
+    $('.left-box button, .right-box button').addClass('overlay');
+  })
+
+  $('.right-box button').on('click', function(){
+    $('.right-box button').removeClass('overlay');
+    $('.left-box button, .middle-box button').addClass('overlay');
+  })
+})
+
+//IMG OVERLAY
+
+$(document).ready(function(){
+  $('.left-box button').on('click', function(){
+    $('.left-box img').removeClass('overlay');
+    $('.middle-box img, .right-box img').addClass('overlay');
+  })
+
+  $('.middle-box button').on('click', function(){
+    $('.middle-box img').removeClass('overlay');
+    $('.left-box img, .right-box img').addClass('overlay');
+  })
+
+  $('.right-box button').on('click', function(){
+    $('.right-box img').removeClass('overlay');
+    $('.left-box img, .middle-box img').addClass('overlay');
+  })
+})
+
+$(document).ready(function(){
+  $('.left-box button').on('click', function(){
+    $('.left-box p').removeClass('overlay');
+    $('.middle-box p, .right-box p').addClass('overlay');
+  })
+
+  $('.middle-box button').on('click', function(){
+    $('.middle-box p').removeClass('overlay');
+    $('.left-box p, .right-box p').addClass('overlay');
+  })
+
+  $('.right-box button').on('click', function(){
+    $('.right-box p').removeClass('overlay');
+    $('.left-box p, .middle-box p').addClass('overlay');
+  })
+})
+
+//BUTTON green
+
+jQuery(function($) {
+  $('.button-press').click(function() {
+    $('.button-press').not(this).removeClass('active').html(function() {
+    });
+    $(this).addClass('active').html
+  });
+});
+
+// GOOGLE ANALYTICS
+
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-23484466-2']);
+_gaq.push(['_setDomainName', 'cigaraficionado.com']);
+_gaq.push(['_setCustomVar',1,'Channel','cds_87688',3]);
+_gaq.push(['_trackPageview','/cds/iso_order/87688']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
