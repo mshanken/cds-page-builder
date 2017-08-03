@@ -54,15 +54,37 @@ $(document).ready(function(){
 //BUTTON green
 
 jQuery(function($) {
-  $('.button-press').click(function() {
-    $('.button-press').not(this).removeClass('active').html(function() {
-    });
+  $('.button-press').click(function(e) {
+    e.preventDefault();
+    $('.button-press').not(this).removeClass('active').html(function() {});
     $(this).addClass('active').html
   });
 });
 
-// GOOGLE ANALYTICS
 
+//SHOW/HIDE
+// $(document).ready
+// (on ('click', (function(){
+//   $('.account-info').toggle();
+// });
+
+
+$(document).ready(function(){
+    $(".toggle-btn").click(function(){
+        $(".toggle-info").toggle();
+    });
+});
+// $('.toggle-close').on('click', function(){
+//   $('.toggle-info').show();
+// })
+// $('.toggle-close').on('click', function(){
+// $('.toggle-info').hide();
+// })
+
+
+
+
+// GOOGLE ANALYTICS
 
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-23484466-2']);
