@@ -1,0 +1,613 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+//
+// Load core variables and mixins
+// --------------------------------------------------
+
+@import "custom";
+@import "public_html/scss/custom";
+@import "public_html/scss/variables";
+@import "public_html/scss/mixins";
+
+@import "public_html/scss/print";
+
+// Core CSS
+@import "public_html/scss/reboot";
+@import "public_html/scss/type";
+@import "public_html/scss/images";
+@import "public_html/scss/grid";
+@import "public_html/scss/forms";
+@import "public_html/scss/buttons";
+
+// Components
+@import "public_html/scss/transitions";
+@import "public_html/scss/button-group";
+@import "public_html/scss/input-group";
+@import "public_html/scss/jumbotron";
+@import "public_html/scss/alert";
+@import "public_html/scss/media";
+
+// Utility classes
+@import "public_html/scss/utilities";
+
+//
+// Custom style starts here
+// --------------------------------------------------
+#mainContainer {
+  width: 800px;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /*box-shadow: 1px 2px 6px 0px #d6d4d4;*/
+}
+
+.header-image {
+  max-width: 100%;
+  max-height:100%;
+  width: 820px;
+  height: 235px;
+  /*float: right;*/
+  /*box-shadow: 1px 2px 6px 0px #d6d4d4;*/
+}
+
+.card-type {
+  width: 100px;
+  height: 100px;
+}
+
+.emphasis {
+  color: red;
+}
+
+#toggle-close {
+  color: rgb(51, 122, 187);
+}
+
+#a {
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 0;
+  padding-top: 5px;
+  width: 780px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+
+.toggle-btn{
+  /*background-color: rgb(38, 81, 115);*/
+  background-color: white;
+  color: rgb(51, 122, 187);
+  border: none;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.toggle-info {
+  display: none;
+  border: 1px solid #ccc;
+  width: 780px;
+  margin-left: 10px;
+}
+
+#form-input {
+  width: 200px;
+}
+
+#form-input2 {
+  width: 200px;
+}
+
+.form-inline {
+  text-align: center;
+}
+
+.email-input {
+  margin-left: 10px;
+}
+
+
+h2 {
+  width: 780px;
+  font-family: 'Roboto', sans-serif;
+  position: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  /*box-shadow: 1px 2px 6px 0px #d6d4d4;*/
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 0;
+
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  text-align: center;
+  background: rgb(126, 88, 52);
+  color: white;
+  /*margin: 10px 10px 20px 10px;*/
+  margin-top: 2px;
+  /*border-style: solid;
+  border-color: rgb(126, 88, 52);
+  border-width: 3px;*/
+  width: 800px;
+  /*box-shadow: 1px 2px 6px 0px #d6d4d4;*/
+  font-weight: 700;
+
+}
+
+body {
+  margin: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+p {
+  position: relative;
+  /*text-align: center;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+#grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(100px, auto);
+  width: 700px;
+  margin-left: 10px;
+}
+
+.left-box {
+  display: grid;
+  width: 260px;
+  border: 1px solid #ccc;
+}
+
+.middle-box {
+  display: grid;
+  width: 260px;
+  border: 1px solid #ccc;
+}
+
+.right-box {
+  display: grid;
+  width: 260px;
+  border: 1px solid #ccc;
+}
+
+#disabled {
+  display: grid;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.right-box img {
+  margin-bottom: 26px;
+  height: 170;
+  width: 197px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px 0px 15px 45px;
+}
+
+.middle-box img {
+  margin-bottom: 26px;
+  height: 170;
+  width: 197px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px 0px 15px 45px;
+}
+
+.left-box img {
+  margin-bottom: 26px;
+  height: 170;
+  width: 197px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px 0px 15px 45px;
+}
+
+.left-box button {
+  background-color: rgb(38, 81, 115);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  border: none;
+  width: 180px;
+  height: 50px;
+  margin-left: 50px;
+  /*box-shadow: 1px 2px 7px 3px #d6d4d4;*/
+  box-shadow: 1px 2px 10px #d6d4d4;
+  border-color: rgb(38, 81, 115);
+  border: 2px solid;
+  border-radius: 3px;
+  margin-top:10px;
+  margin-bottom: 20px;
+}
+
+.middle-box button {
+  background-color: rgb(38, 81, 115);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  border: none;
+  width: 180px;
+  height: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  /*old shadow*/
+  /*box-shadow: 1px 2px 7px 3px #d6d4d4;*/
+  box-shadow: 1px 2px 10px #d6d4d4;
+  border-color: rgb(38, 81, 115);
+  border: 2px solid;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.right-box button {
+  background-color: rgb(38, 81, 115);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  border: none;
+  width: 180px;
+  height: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  box-shadow: 1px 2px 10px #d6d4d4;
+  /*box-shadow: 1px 2px 7px 3px #d6d4d4;*/
+  border-color: rgb(38, 81, 115);
+  border: 2px solid;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.left-box .button-press.active {
+  background-color: green;
+}
+
+.top-info {
+}
+
+.middle-box .button-press.active {
+  background-color: green;
+}
+
+.right-box .button-press.active {
+  background-color: green;
+}
+
+.overlay {
+  background-color: white;
+  opacity: 0.2;
+}
+
+.red-text {
+  color: rgb(141, 17, 17);
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
+
+.subscription {
+  color: rgb(141, 17, 17);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  width: 264.66px;
+  height: 30.63px;
+}
+
+#inlineFormInputGroup {
+  /*border-radius: 3px;*/
+}
+
+
+
+.small-text {
+  font-size: 10px;
+  font-style: italic;
+  margin-left: 10px;
+}
+
+
+.btn-primary {
+  background-color: rgb(38, 81, 115);
+  margin-left: 360px;
+  margin-top: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.btn.btn-primary:active {
+  background-color: green;
+}
+
+.btn.btn-primary:hover {
+  background-color: green;
+  border: none;
+}
+
+
+.form-inline {
+  margin-top: 20px;
+}
+
+
+
+.help-link {
+  /*this is to left align the Need help fining account number*/
+  color: rgb(38, 81, 115);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+#formGroupExampleInput4 {
+  margin-bottom: 10px;
+}
+
+#form-two {
+  /*border-style: solid;
+  border-color: rgb(211, 211, 211);
+  border-width: 0.25px;*/
+  /*box-shadow: 1px 2px 6px 0px #d6d4d4;*/
+  margin-left: 10px;
+  width: 780px;
+  max-height: 100%;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+#form-three {
+  /*border-style: solid;
+  border-color: rgb(211, 211, 211);
+  border-width: 0.5px;*/
+  height: 100%;
+  margin-left: 10px;
+  width: 780px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+.form-four {
+  width: 770px;
+  padding-left: 0px;
+  max-height: 100%;
+  /*box-shadow: 1px 2px 6px 0px #d6d4d4;*/
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+hr {
+  width: 780px;
+}
+
+#header {
+  box-shadow: 1px 2px 6px 0px #d6d4d4;
+}
+
+.radio-buttons{
+  margin: 15px;
+}
+
+.radio-buttons img{
+  width: 50px;
+  height: 33px;
+  margin: 5px;
+}
+
+.btn-success {
+  position: relative;
+  background-color: rgb(38, 81, 115);
+  border: none;
+  border-radius: 3px;
+  top: 50%;
+  padding: 15px;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  box-shadow: 1px 2px 10px #d6d4d4;
+
+}
+
+.centered-text {
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+#a p{
+  margin-bottom: 0px;
+}
+
+.form-inline {
+  margin: 10px;
+}
+
+.form-inline p {
+  position: relative;
+  margin: 0px;
+}
+
+#or {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+.help-link {
+  margin: 10px;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+.dropdown {
+  margin-top: 10px;
+}
+
+ul {
+  float: right;
+}
+
+.control-label {
+  float: left;
+}
+
+fieldset {
+  margin-top: 10px;
+  padding-left: 10px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+#state {
+  background-color: white;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-top: 5px;
+  position: inline;
+}
+
+input::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+#account-info {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+
+#formGroupExampleInput {
+  width: 300px;
+}
+
+#formGroupExampleInput2 {
+  width: 300px;
+}
+
+#formGroupExampleInput3 {
+  width: 300px;
+}
+
+#formGroupExampleInput4 {
+  width: 400px;
+}
+
+#formGroupExampleInput5 {
+  width: 300px;
+}
+
+#formGroupExampleInput6 {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+#formGroupExampleInput7 {
+  width: 200px;
+}
+
+#formGroupExampleInput8 {
+  width: 200px;
+}
+
+#formGroupExampleInput9 {
+  width: 100px;
+}
+
+#formGroupExampleInput10 {
+  width: 350px;
+}
+
+#inlineFormInputGroup {
+  width: 400px;
+}
+
+#success-wrapper {
+  text-align: center;
+}
+
+#expiry-month{
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+  color: rgb(153, 153, 153);
+}
+
+#expiry-year {
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+  color: rgb(153, 153, 153);
+}
+
+
+
+#states {
+  height: 30px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+  color: rgb(153, 153, 153);
+}
+
+#industry-relation {
+  margin-bottom: 30px;
+  height: 30px;
+  background-color: white;
+}
+
+.Save-info {
+  font-weight: 700;
+}
+
+.number-input {
+  display: inline;
+  margin-left: 10px;
+}
+
+.email-input {
+  display: inline-block;
+  margin: 0;
+}
+
+
+#footer-info {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-left: 0;
+}
+
+fieldset {
+  margin-bottom: 10px;
+}
+

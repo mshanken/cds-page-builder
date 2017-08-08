@@ -1,0 +1,4 @@
+{
+  "files": ["public_html/js/vendor/jquery.js",
+			"public_html/js/vendor/jquery-migrate.js"]
+}

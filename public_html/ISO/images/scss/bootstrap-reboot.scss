@@ -1,0 +1,9 @@
+// Bootstrap Reboot only
+//
+// Includes only Normalize and our custom Reboot reset.
+
+@import "public_html/scss/custom";
+@import "public_html/scss/variables";
+@import "public_html/scss/mixins";
+
+@import "public_html/scss/reboot";
