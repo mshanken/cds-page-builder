@@ -1,0 +1,91 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>WS-confirm</title>
+	<style type="text/css">
+	<!--
+	p.big{font:30px Arial;color:#000;margin:05px 0 0 15px;}
+	p{font:12px Arial;color:#000;margin:10px 15px 10px 15px;}
+	p.small{font:11px Arial;color:#000;margin:2px 10px 2px 15px;}
+	-->
+	</style>
+</head>
+<body>
+<div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23484466-31"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23484466-31');
+</script>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+	LOTCC_rnd = new String(Math.random()).substring(2,11);
+	LOTCC_placement=179;
+	LOTCC_client=25;
+	document.write('<scr'+'ipt LANGUAGE="JavaScript1.1" SRC="http://coop.crwdcntrl.net/4/to=y|c=' + LOTCC_client + '|p=' + LOTCC_placement + '|rand=' + LOTCC_rnd + '"></scr' + 'ipt>');
+//-->
+</SCRIPT>
+</div>
+<table align="center" width="665" border="0" cellpadding="0" cellspacing="0">
+<tr bgcolor="#ebebeb">
+	<td width="65%"><p class="big"><b>Thanks for your order!</b></p></td>
+	</tr>
+<tr>
+	<td colspan="2">
+		<p><#IFNOTEMPTY_IMPULSE_OFFER_TERM>Thank you for subscribing to Whisky Advocate's risk-free trial offer. You will receive 1 FREE issue, no risk, no obligation. If you decide Whisky Advocate isn't for you, simply return the invoice you'll receive and mark it "Cancel." If you like it, you can subscribe for a year (4 issues including your trial issue) for just $18.00.  Your subscription will be sent to the address below. Your first issue will arrive in six to eight weeks. Your FREE ABC's of Whisky will be shipped when final payment is received. 
+		<#ELSE>Thank you for subscribing to Whisky Advocate's risk-free trial offer. You will receive 1 FREE issue, no risk, no obligation. If you decide Whisky Advocate isn't for you, simply return the invoice you'll receive and mark it "Cancel." If you like it, you can subscribe for a year (4 issues including your trial issue) for just $22.00.  Your subscription will be sent to the address below.  Your first issue will arrive in six to eight weeks. Your FREE ABC's of Whisky will be shipped when final payment is received.
+<#ENDIF>  
+		</p>
+	
+		<table align="center" width="95%" cellpadding="0" cellspacing="0" style="border:2px solid #ebebeb;">
+		<tr>
+			<td align="left" width="70%">
+				<br />
+				<p class="small"><b>Full Name:</b>&nbsp;&nbsp;<$NAME></p>
+				<p class="small"><b>Street Address:</b>&nbsp;&nbsp;<$ADDRESS1></p>
+				<p class="small"><b>City:</b>&nbsp;&nbsp;<$CITY></p>
+				<p class="small"><b>State:</b>&nbsp;&nbsp;<$STATE></p>
+				<p class="small"><b>Zip:</b>&nbsp;&nbsp;<$ZIP><$POSTAL_CODE></p>
+				<p class="small"><b>Country:</b>&nbsp;&nbsp;<$COUNTRY></p>
+				<p class="small"><b>E-mail Address:</b>&nbsp;&nbsp;<$EMAIL></p>
+				<p class="small"><b>Number of Issues:</b>&nbsp;&nbsp; <$TERM></p>
+				<p class="small"><b>Price:</b>&nbsp;&nbsp;<$VALUE></p>
+				<p class="small"><b>Payment Method:</b>&nbsp;&nbsp;<$PAY_TYPE></p>
+				<br />
+			</td>
+			
+		</tr>
+		<#IFNOTEMPTY_IMPULSE_OFFER_TERM>
+		<#ELSE>
+		<tr bgcolor="#ebebeb">
+			<td colspan="2">
+				<p><font color="#e21a48" size="3"><b>Subscriber Deals!</b></font><br />
+				Save on a one-year subscription to <b><i>Cigar Aficionado</i></b> - one click is all it takes to add to your existing order!</p>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2">
+				<br />
+				<p align="center"><img src="images/CGA_MA2017.jpg" width="182" height="240" /></p>
+				<$CROSS_SELL_OFFER_12>
+				<!-- <p align="center"><a href=""><img src="images/CA-confirm_13.gif" width="185" height="37" border="0" /></a></p> -->
+			</td>
+		</tr>
+		<#ENDIF>
+		</table>
+			
+	</td>
+</tr>
+<tr>
+	<td colspan="2"><br />
+		
+	</td>
+</tr>
+</table>
+</body>
+</html>
