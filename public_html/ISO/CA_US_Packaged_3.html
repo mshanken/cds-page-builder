@@ -1,26 +1,20 @@
+
 <!DOCTYPE HTML>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cigar Insider</title>
     <link rel="stylesheet" href="images/css/CA_US_Packaged_3.css">
 </head>
-
-
 <body>
     <div id="mainContainer">
         <div id="header">
-
             <div class="header-img"><img src="images/Cigar-Insider-New-Logo.jpg" alt="cigar insider"></div>
-
             <div class="centered-text">
                 <p>This twice monthly e-Newsletter has exclusive cigar ratings, fascinating interviews <br> with cigar producers, up-to-the-minute news releases, and much more.</p>
             </div>
-
             <h2>STEP ONE: SELECT AN OFFER</h2>
-
             <!--This is where I am pasting it-->
             <div id="account-info">
                 <div id="a">
@@ -29,7 +23,6 @@
                         <br><button class="toggle-btn btn"><strong>See Details</strong></button>
                     </div>
                 </div>
-
                 <div class="toggle-info">
                     <table align="center">
                         <tr>
@@ -40,6 +33,7 @@
                                         <input type="hidden" name="cds_sub_val_config_id" value="35" />
                                         <!-- <label>Account Number</label> -->
                                         <input type="text" class="form-control" name="cds_account_number" id="cds_account_number" placeholder="Account Number">
+                                        <button type="submit" class="btn btn-primary">ACTIVATE</button>
                                     </form>
                                     </div>
                             </td>
@@ -55,24 +49,19 @@
                                         <input type="hidden" name="cds_sub_val_config_id" value="35" />
                                         <!-- <label>Email</label> -->
                                         <input type="text" class="form-control" name="cds_email" id="cds_email" placeholder="Email">
+                                        <button type="submit" class="btn btn-primary">ACTIVATE</button>
                                     </form>
                                     </div>
                             </td>
                         </tr>
                     </table>
                     
-                    <button type="submit" class="btn btn-primary">ACTIVATE</button>
+                    
                 </div><!-- End ./toggle-info -->
-
                 <!--This is the END of the paste- -->
-
-
-
-
                 <div id="error">
                     <p style="color:red"><&ACCESS_ERROR><$ERROR_ALL></p>
                 </div>
-
             <form action="/servlet/Transaction" method="post" id="subForm"  class="form">
                 <div id="grid-wrapper">
                     <div class="left-box">
@@ -86,7 +75,6 @@
                             <p>1 year for $59.95*</p>
                         </div>
                     </div>
-
                     <div class="middle-box">
                         <img src="images/CI-1year-2.png" alt="One year subscription of the Cigar Aficionado E-Newsletter">
                         <div class="subscription">
@@ -98,7 +86,6 @@
                             <p>1 year for $49.95*</p>
                         </div>
                     </div>
-
                     <div class="right-box">
                         <img src="images/CI-1month.png" alt="One month subscription of the Cigar Aficionado E-Newsletter">
                         <div class="subscription">
@@ -111,7 +98,6 @@
                         </div>
                     </div>
                 </div><!-- End #/grid-wrapper -->
-
                 <h2>STEP TWO: ENTER YOUR INFORMATION</h2>
                 <div id="form-two">
                     <div class="form-group">
@@ -148,7 +134,6 @@
                             <$CDS_STATE_LIST>
                         </select>
                     </div>
-
                     <div class="form-group">
                         <label>Country</label><br>
                         <select class="form-control col-sm-2" id="cds_country" name="cds_country">
@@ -157,21 +142,18 @@
                         </select>
                     </div>
                     
-
                     <div>
                         <div class="form-group">
                             <label>Zip/Postal Code</label>
                             <input name="cds_zip" type="text" class="form-control col-2" id="cds_zip" placeholder="Zip/postal code">
                         </div>
                     </div>
-
                     <div>
                         <div class="form-group">
                             <label>Int'l Postal Code</label>
                             <input name="cds_postal" type="text" class="form-control col-2" id="cds_postal" placeholder="Int'l Postal Code">
                         </div>
                     </div>
-
                     <div>
                         <div class="form-group">
                             <label>What is your relationship to the cigar industry? <strong>(Required)</strong></label>
@@ -179,12 +161,8 @@
                         </div>
                     </div>
                 </div>
-
-
                 <h2>STEP THREE: PAYMENT OPTIONS</h2>
-
                 <div id="form-three">
-
                     <!-- <div class="radio-buttons">
                         <label class="radio-inline"><input name="cds_pay_type" type="radio" name="optradio1"><img src="images/mastercard.png"></label>
                         <label class="radio-inline"><input name="cds_pay_type" type="radio" name="optradio1"><img src="images/visa.png"></label>
@@ -201,12 +179,10 @@
                             <option value="13">Diner's Club</option>
                         </select>
                     </div>
-
                     <div class="form-group">
                         <label>Credit Card Number</label>
                         <input name="cds_cc_number" type="text" class="form-control col-5" id="cds_cc_number" autocomplete="off" placeholder="Card Number">
                     </div>
-
                     <div>
                         <fieldset>
                             <label>Expiration Month</label><br>
@@ -227,7 +203,6 @@
                             </select>
                         </fieldset>
                     </div>
-
                     <div>
                         <fieldset>
                             <label>Expiration Year</label><br>
@@ -237,12 +212,10 @@
                             </select>
                         </fieldset>
                     </div>
-
                     <div class="form-group">
                         <label>CVV</label>
                         <input type="text" class="form-control col-2" id="formGroupExampleInput9" placeholder="Code">
                     </div>
-
                     <hr>
                     <div class="form-four">
                         <div id="details">
@@ -252,9 +225,8 @@
                                 <p>*Your subscription will be automatically renewed. <a href="https://w1.buysub.com/pubs/M5/ISO/images/details1.htm" target="_blank">(details)</a></p>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <div id=success-wrapper><button type="submit" class="btn btn-success">BEGIN MEMBERSHIP</button></div>
+                            <div id=success-wrapper><button type="submit" name="send" class="btn btn-success">BEGIN MEMBERSHIP</button></div>
                         </div>
                     </div>
                 </form>
@@ -265,5 +237,4 @@
       <script src="../images/js/vendor/jquery-migrate.js"></script>
       <script src="images/js/script.js"></script>
 </body>
-
 </html>
