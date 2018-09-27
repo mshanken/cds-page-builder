@@ -7,6 +7,13 @@ module.exports = function(grunt) {
     config : {
       src: './tasks/*.js'
     },
+    dev: {
+        root:   './public-html',
+        style:  './public-html/css/vendor',
+        images: './public-html/images',
+        script: './public-html/js/vendor',
+        font:   './public-html/fonts'
+      },
     pkg: grunt.file.readJSON('package.json'),
     // jsonData: grunt.file.readJSON('./data/data.json'),
     replacements: require('./tasks/replacements'), // Regex for refactor task.
@@ -33,7 +40,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'uglify'
   ]);
-  grunt.registerTask('uglify', [
-    'uglify'
+  grunt.registerTask('start', [
+    'bower'
   ]);
 };

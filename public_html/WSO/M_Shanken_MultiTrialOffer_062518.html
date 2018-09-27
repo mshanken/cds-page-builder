@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M. Shanken - Multi Title Order Page</title>
+<!-- Latest compiled and minified bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional bootstrap theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<style type="text/css">
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+			border:0 none;
+			font-size:100%;
+			margin:0;
+			outline-color:-moz-use-text-color;
+			outline-style:none;
+			outline-width:0;
+			padding:0;
+			vertical-align:baseline;
+		}
+body {
+			line-height:1;
+			background:#efefef none repeat scroll 0 0;
+			font-family:Arial,Helvetica,sans-serif;
+			font-size:62.5%;
+			line-height:1.25;
+			margin:0;
+			padding:0;
+			text-align:center;
+		}
+	
+#wrapper {
+			font-size:1.2em;
+			width:800px;
+			margin:0 auto;
+			text-align:left;
+			background:#fff;
+		}
+fieldset ol,fieldset ul {
+			list-style:none;
+			margin:0;
+			padding:0;
+	}
+li {margin:10px 0 0 0;}
+label {display:block;color:#333;text-indent:5px;text-shadow:1px 1px 1px #fff; font-weight: bold; margin: 0 0 2px;}
+input[type=text],input[type=email] {width:350px;background:#fff;padding:5px;
+-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;	
+	-moz-border-radius: 5px;
+	border-radius: 5px;border:1px solid #ccc; }
+input.zip {width:90px;}
+li.stateHolder,.zipHolder {float:left;}
+li.zipHolder {margin-left:10px}
+.countryList {clear:both;padding-top:10px;}
+.state {width:248px}
+.country {width:360px;}
+.paytype {width:248px;}
+#subscriberBlock {}
+li.emailHolder {margin-bottom:10px;}
+input[type=text]:focus {border-color: #80B8B9;-moz-box-shadow:0px 0px 3px #999;-webkit-box-shadow: 0px 0px 3px #999;}
+#container {overflow:hidden;}
+#header {margin:0;}
+#error {color:#900;margin:10px;}
+#footer {margin:10px;font-size:.9em;text-align:center;padding:10px 0 20px;}
+h2 {/*font-weight:bold; color:#cd2d1b;font-size:1.4em;text-shadow:1px 1px 1px #fff;*/}
+#subscriberOffers,#subscriberBilling {margin:0 0 10px 0;}
+.errored {padding:5px 10px;background:#fcc;color:#900;-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;	
+	-moz-border-radius: 5px;
+	border-radius: 5px;border:1px solid #900;}
+#securityImage {vertical-align:bottom;}
+#subscriberOffers h2, #subscriber h2, #subscriberBilling h2 {
+	background-color:#7E0D34;
+	color:#fff;
+	font-size:1.5em;
+	font-weight:bold;
+	padding:10px;
+	line-height:1em;
+	/*background: url('images/hdr1.png') no-repeat 0 0;height:40px;width:390px;text-indent:-9999em;*/
+	}
+#subscriberOffers h2 span, #subscriber h2 span, #subscriberBilling h2 span {
+	font-size:1.7em;
+	vertical-align:middle;
+	margin-right:10px;
+}
+#subscriber h2 {/*background: url('images/hdr2.png') no-repeat 0 0;height:40px;width:390px;text-indent:-9999em;*/}
+#subscriberBilling h2 {/*background: url('images/hdr3.png') no-repeat 0 0;height:40px;width:390px;text-indent:-9999em;*/}
+.col1 {float:left;width:390px;}
+.col2 {float:right;width:390px;}
+#subscriberOffers fieldset,
+#subscriber  fieldset, 
+#subscriberBilling fieldset {padding:10px 15px;}
+.subscribeInfo {margin:10px 15px;padding:10px;background:#efefef;border:1px solid #dfdfdf;font-size:.85em;}
+.subscribeInfo span {font-weight:bold;font-size:.1.5em}
+#securityImage {margin:10px 0 0;}
+#submitBlock {text-align: center;margin:30px 0 0;}
+.pick-all {margin:10px 15px 0; padding:5px;background:#E9F6F6;border:1px solid #C0E4E5;}
+#subscriberOffers fieldset,#subscriberOffers .cart-amount  {padding: 10px 20px;}
+ .cart-amount span {font-weight:bold;}
+  .cart-amount {background:#a14b68;border:1px solid #831239;margin:5px 20px;color:#ffffff;}
+.pick-all label {display:inline;}
+.email-txt{
+    display: block;
+    font-size: 10px;
+    margin-top: -10px;
+    padding-left: 15px;
+	
+}
+#submit, .desktop, .mobile {
+	margin:0 auto;
+}
+.desktop {
+	display:block;
+}
+.mobile {
+	display:none;
+}
+.intl {
+	font-size:10px;
+	padding-left:23px;
+	margin-bottom:5px;
+}
+input[type=checkbox], input[type=radio] {
+	float:left;
+}
+.expire {
+	width:50%;
+	float:left;
+}
+@media (max-width: 799px) {
+	#wrapper {
+		width:100%;
+	}
+	.col1, .col2 {
+		width:44%;
+		margin:0 3%;
+	}
+	input[type="text"], input[type="email"] {
+		width:100%;
+	}
+	.state, input.zip, .paytype {
+		width:100%;
+	}
+	li.stateHolder {
+		width:70%;
+	}
+	.zipHolder {
+		width:25%;
+	}
+}
+@media (max-width: 480px) {
+	.col1, .col2 {
+		width:94%;
+		margin:0 3%;
+	}
+	.col2 {
+		margin-top:10px;
+	}
+	h2 img {
+		margin:0 auto;
+	}
+	.desktop {
+		display:none;
+	}
+	.mobile {
+		display:block;
+	}
+}
+</style>
+<!-- Begin UA code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-23484466-20', 'winespectator.com');
+  ga('send', {"hitType":"pageview","dimension1":"cds_227634","dimension3":"cds","page":"/cds/wso_order/227634"});
+</script>
+<!-- End UA code -->
+<script>
+	window.onload=function(){
+		var e = '<$ERROR_ALL>';
+		if (e != '') {
+			document.getElementById('error').className = "errored";1
+		};
+	}
+	
+</script>
+</head>
+<body>
+<form name="engage" action="/servlet/Transaction" method="post" class="orderform">
+<input type="hidden" name="cds_country" value="United States" />
+	<div id="wrapper">
+		<div id="header" class=""><h1><img src="images/WS_CA_WA_FreeTrialOffer800x250_heads4_060518.jpg" class="img-responsive desktop" alt="With Knowledge Comes Enjoyment. Enjoy these magazines. Free Trial Offer. Wine Spectator, Whiskey Advocate, Cigar Aficionado" /><img src="images/WS_CA_WA_FreeTrialOffer300x250_headsCOMP_060518.jpg" class="img-responsive mobile" alt="With Knowledge Comes Enjoyment. Enjoy these magazines. Free Trial Offer. Wine Spectator, Whiskey Advocate, Cigar Aficionado" /><span class="sr-only">Subscription Form</span></h1></div>
+		<div id="marketing" class="">&nbsp;</div>
+		<div id="error"><$ERROR_ALL></div>
+        
+		<div id="container">
+        <div class="col1">
+        <div id="subscriberOffers" class="termsAndValues">
+		
+				<h2><span>1</span> Select Your Magazines:</h2><fieldset class="multi-offers"><legend class="sr-only">Select Your Magazines</legend>
+				  <p>FREE TRIAL ISSUE! Sign up for a FREE Trial issue of your favorite magazines below.</p>
+				  <p><input name="cds_term_value" value="1" type="CHECKBOX" id="offer1"><label for="offer1">Wine Spectator - 15 issues for $59.95</label></p><div class="intl"><a href="/servlet/OrdersGateway?cds_mag_code=WSO&cds_page_id=121462">Canadian Orders</a>&nbsp;&nbsp;&nbsp;<a href="/servlet/OrdersGateway?cds_mag_code=WSO&cds_page_id=121466">Foreign Orders</a></div>
+                  <p><input name="cds_term_value" value="2" type="CHECKBOX" id="offer2"><label for="offer2">Cigar Aficionado - 6 issues for $24.95</label></p><div class="intl"><a href="/servlet/OrdersGateway?cds_mag_code=WSO&cds_page_id=121462">Canadian Orders</a>&nbsp;&nbsp;&nbsp;<a href="/servlet/OrdersGateway?cds_mag_code=WSO&cds_page_id=121466">Foreign Orders</a></div>
+                  <p><input name="cds_term_value" value="3" type="CHECKBOX" id="offer3"><label for="offer3">Whisky Advocate - 4 issues for $22.00</label></p><div class="intl"><a href="/servlet/OrdersGateway?cds_mag_code=WSO&cds_page_id=121462">Canadian Orders</a>&nbsp;&nbsp;&nbsp;<a href="/servlet/OrdersGateway?cds_mag_code=WSO&cds_page_id=121466">Foreign Orders</a></div>
+				</fieldset>
+                <div class="cart-amount"><p><span>Total:</span> <$CART_AMOUNT></p>
+			<p>If you are not completely satisfied, simply return the invoice you'll receive and mark it "Cancel." You won't owe a cent. The FREE issue is yours to keep with our compliments.</p>            
+          </div> 
+			</div>
+			<div id="subscriber" class="">
+			  <h2><span>2</span> Mailing Information:</h2>
+              <fieldset><legend class="sr-only">Mailing Information</legend>
+                <ul class="col-1">
+                        <li class="nameHolder">
+                            <label for="cds_name" class="name">Full Name:</label>
+                            <input name="cds_name" id="cds_name" class="name" value="" maxlength="27" type="text" />
+                        </li>
+                        <li class="address1Holder">
+                            <label for="cds_address_1" class="address1">Address:</label>
+                            <input name="cds_address_1" id="cds_address_1" class="address1" value="" maxlength="27" type="text" />
+                        </li>
+                        <li class="address2Holder">
+                            <label for="cds_address_2" class="address2 sr-only">Address 2:</label>
+                            <input name="cds_address_2" id="cds_address_2" class="address2" value="" maxlength="27" type="text" />
+                        </li>
+                        <li class="cityHolder">
+                            <label for="cds_city" class="city">City:</label>
+                            <input name="cds_city" id="cds_city" class="city" value="" maxlength="13" type="text" />
+                        </li>
+                        <li class="stateHolder">
+                            <label for="cds_state" class="state">State:</label>
+                            <span id="subscriberStates">
+                                <select name="cds_state" id="cds_state" class="state" size="1">
+                                    <option value="">Select A State</option>
+                                    <$CDS_STATE_LIST>
+                                </select>
+                            </span>
+                        </li>
+                        <li class="zipHolder">
+                            <label for="cds_zip" class="zip">ZIP Code:</label>
+                            <input name="cds_zip" id="cds_zip" class="zip" value="" maxlength="6" type="text" />
+                        </li>
+                       <!-- <li class="countryList">
+                            <label for="cds_country" class="country">Country:</label>
+                            <span id="subscriberCountries">
+                                <select name="cds_country" id="cds_country" class="country" size="1">
+                                    <option value="">Select A Country</option>
+                                    <$CDS_COUNTRY_LIST>
+                                </select>
+                            </span>
+                        </li>
+                        <li style="clear:both;"></li>-->
+                        <li class="emailHolder">
+                            <label for="cds_email" class="email">Email Address:</label>
+                            <input name="cds_email" id="cds_email" class="email" value="" maxlength="50" type="text" />
+                        </li>
+                  </ul>
+                </fieldset>
+              <span class="email-txt">
+                *Email address required.  You'll be contacted about your subscription and other promotions related to the magazines.
+			  </span></div>
+			
+          </div>
+          <div class="col2">  
+          			<div id="subscriberBilling" class="billing">
+				<h2><span>3</span> Billing Information:</h2>
+                <fieldset><legend class="sr-only">Billing Information</legend>
+                    <ul>
+                        <li>
+                            <label for="cds_pay_type" class="cctype">Payment Type:</label>
+                            <span id="subscriberPayTypes">
+                                <select name="cds_pay_type" id="cds_pay_type" class="paytype" size="1">                          
+                                    <option value="6" selected>Bill Me</option>
+                                    <option value="10">MasterCard</option>
+                  					<option value="11">Visa</option>
+                 					<option value="12">American Express</option>
+                  					<option value="13">Diner's Club</option>                   
+                                    <!--<option value="25">PayPal</option>                    -->                
+                                </select>
+                            </span>
+                        </li>
+                        <li class="creditOptions">
+                            <label for="cds_cc_number">Credit Card Number:</label>
+                            <input name="cds_cc_number" id="cds_cc_number" autocomplete="off" value="" maxlength="16" type="text" />
+                        </li>
+                        <li class="creditOptions">
+                            <label for="cds_cc_exp_month" class="expire">Expiration Month:</label>
+                            <label for="cds_cc_exp_year" class="expire">Expiration Year:</label>
+                            <span id="subscriberExpireMonth">
+                                <select name="cds_cc_exp_month" id="cds_cc_exp_month" class="expire">
+                                    <option value="">Month</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </span>
+                            <span id="subscriberExpireYear">
+                                <select name="cds_cc_exp_year" id="cds_cc_exp_year" class="expire">
+                                    <option value="">Year</option>
+                                    <$CDS_EXPIRE_YEAR_LIST>
+                                </select>
+                            </span><img src="images/payment-background.png" alt="This transaction is secured with SSL encryption." name="securityImage" class="img-responsive" id="securityImage" />
+                        </li>
+                    </ul>
+                </fieldset>
+			</div>
+    
+    		<input type="hidden" name="cds_use_email" value=" " />
+	<p class="subscribeInfo">
+              <span>Automatic Renewal Offer:</span> I understand that I will receive uninterrupted service and delivery of Wine Spectator, Whisky Advocate and Cigar Aficionado if applicable, and that my subscription will be automatically renewed each year at the rate then in effect. I won't be bothered with any renewal notices in the mail; instead, I will receive a clearly marked annual reminder about 60 days before my credit card is charged or a bill is sent. I may cancel at any time during my subscription and receive a full refund on any unmailed copies by calling Wine Spectator at 1-800-752-7799<tel:1-800-752-7799> or Cigar Aficionado at 1-800-992-2442<tel:1-800-992-2442> or Whisky Advocate at 1-800-610-6258<tel:1-800-610-6258>.
+            </p>
+			<div id="submitBlock" class=""><input name="send" id="submit" src="images/submit-multi.png" value="Submit" type="image" alt="Submit Your Order" class="img-responsive"></div><!-- Close Submit -->
+		</div>
+        </div><!--close container -->
+        
+		<div id="footer" class="">
+			<p>Copyright &copy; <$CURRENT_YEAR> M. Shanken Communications, Inc.</p>
+	  </div><!-- Close  Footer -->
+                
+	</div><!-- Close  wrapper -->
+</form>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ <!-- Latest compiled and minified bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+$(function(){
+$('#selectAll').change(function() {
+    var checkboxes = $('.termsAndValues').find(':checkbox');
+    if($(this).is(':checked')) {
+        checkboxes.attr('checked', 'checked');
+    } else {
+        checkboxes.removeAttr('checked');
+    }
+});
+  function add() {
+            if($(this).val() == ''){
+                $(this).val($(this).attr('placeholder')).addClass('placeholder');
+            }
+        }
+        function remove() {
+            if($(this).val() == $(this).attr('placeholder')){
+                $(this).val('').removeClass('placeholder');
+            }
+        }
+        // Create a dummy element for feature detection
+        if (!('placeholder' in $('<input>')[0])) {
+            // Select the elements that have a placeholder attribute
+            $('input[placeholder], textarea[placeholder]').blur(add).focus(remove).each(add);
+        // Remove the placeholder text before the form is submitted
+            $('form').submit(function(){
+                $(this).find('input[placeholder], textarea[placeholder]').each(remove);
+            });
+        }
+});
+</script>
+</body>
+</html>

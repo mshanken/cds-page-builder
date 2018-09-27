@@ -1,0 +1,269 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>WS-Sub</title>
+<meta name="viewport" content="width=device-width,user-scalable=yes,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" media="screen and (min-device-width: 481px)" href="images/desktop.css" />
+<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="images/screen.css" />
+<link rel="stylesheet" media="only handheld and (max-device-width: 480px)" href="images/mobile.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio: 1.5)" href="images/screen.css" />
+<link rel="stylesheet" media="handheld and (-webkit-device-pixel-ratio: 1.5)" href="images/mobile.css" />
+<!-- Begin UA code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-23484466-20', 'winespectator.com');
+  ga('send', {"hitType":"pageview","dimension1":"cds_228302","dimension3":"cds","page":"/cds/wne_order/228302"});
+</script>
+<!-- End UA code -->
+</head>
+<body>
+<div id="mainContainer">
+<form action="/servlet/Transaction" method="post">
+<table align="center" width="800" cellpadding="0" cellspacing="0" border="0" bgcolor="#ead48b">
+    <tr>
+    	<td colspan="2" align="center"><img src="images/WNE_SubPage_Banner_060518.jpg" width="1024" height="550" alt="Subscribe Today" border="0"/></td>
+    </tr>
+    <tr>
+    	<td valign="top" class="left" colspan="2">
+            <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#ead48b" border="0" style="padding-left:10px;">
+            	<tr>
+                    <td class="top" colspan="2" style="padding-left:10px;"> 
+                        <font color="#FF0000"><b></b></font> <br />
+                        <p><b>Send me my two risk-free issues and bill me later.  If I like Wine Spectator, I'll receive 15 more issues and pay $59.95.  My FREE 100 Top Values Guide will be shipped when final payment is received.  If I decide not to subscribe, I'll just write cancel on the invoice or email wsonline@mshanken.com.</b></p>
+                        <p><&TERMS_VALUES></p>
+                        <p></p>
+                    </td>
+				</tr>
+				<tr>
+                    <td colspan="2" align="center">
+                        <b><font color="Red" face="arial" size="1"><span class="error" align="center">
+                        <$ERROR_ALL>
+                        </span></font></b>
+                    </td>
+				</tr>
+				<tr>
+                    <td class="top" width="50%" valign="top" style="padding-left:10px;">
+                        <br />
+                        <p><b>Please enter your billing information:</b></p>
+                        <p>E-mail Address:<br />
+                        <input type="text" name="cds_email" size="50" maxlength="40" value="" tabindex="1"></p>
+                        <p>Full Name:<br />
+                        <input type="text" name="cds_name" size="50" maxlength="27" value="" tabindex="2"></p>
+                        <p>Street Address:<br />
+                        <input type="text" name="cds_address_1" size="50" maxlength="27" value="" tabindex="3"><br />
+                        <input type="text" name="cds_address_2" size="50" maxlength="27" value="" tabindex="4"></p>
+                        <p>City<br />
+                        <input type="text" name="cds_city" size="30" maxlength="13" value="" tabindex="5"></p>
+                        <p>State<br />		
+                        <SELECT name="cds_state" tabindex="6"/>
+                        <option value="NA" >Choose your State</option>
+                        <$CDS_STATE_LIST>
+                        </SELECT>
+                        </p>
+                        <p>Zip Code<br />
+                        <input type="text" name="cds_zip" size="50" maxlength="6" value="" tabindex="7"></p>
+                        <!--<p>Country<br>//-->
+                        <input type="hidden" name="cds_country" value="United States" />
+                        <!--</p>//-->
+                        </td>
+                        <td class="top" width="50%" valign="top">
+                        <br />
+                        <p><b>Your email address is<br /> 
+                        required to identify<br />
+                        you for future<br /> 
+                        customer service<br /> 
+                        requests.  <p>Canadian/Foreign orders, <a href="/servlet/OrdersGateway?cds_mag_code=WNE&cds_page_id=46286">Click Here</a></p></b>
+                        <br />
+                    <a href="https://sub.winespectator.com/servlet/GiftsGateway?cds_mag_code=WNE&cds_page_id=172870"><img src="images/WS-donee-page_13NEW.gif" alt="Give A Gift" style="padding-left:15px;"/></a></td>
+                </tr>
+                <tr>
+                    <td class="top" colspan="2">
+                    <!-- <br />
+                    <p><b>I'd like to pay now.  Charge my credit card $49.95 for a full year of Wine Spectator.<br>  
+                    Send my FREE Red Wine Values Guide right away.</b></p>
+                    
+                    <p><input type="radio" name="cds_pay_type" value="12"  class="none" tabindex="8"/>&nbsp;
+                    <img src="images/amex.gif" width="30" height="19" />&reg;&nbsp;&nbsp;American Express</p>
+                    
+                    <p><input type="radio" name="cds_pay_type" value="10"  class="none" tabindex="9"/>&nbsp;
+                    <img src="images/mastercard.gif" width="30" height="20" />&reg;&nbsp;&nbsp;MasterCard</p>
+                    
+                    <p><input type="radio" name="cds_pay_type" value="11"  class="none" tabindex="10"/>&nbsp;
+                    <img src="images/visa.gif" width="30" height="19" />&reg;&nbsp;&nbsp;VISA</p>
+                    
+                    <p><input type="radio" name="cds_pay_type" value="13"  class="none" tabindex="11"/>&nbsp;
+                    <img src="images/dinersclub.gif" width="31" height="20" />&reg;&nbsp;&nbsp;Diner's Club</p>
+                    
+                    <p>Credit Card Number<br />
+                    <input type="TEXT" name="cds_cc_number" size="30" maxlength="50" value="" autocomplete="off"  tabindex="12"></p>
+                    
+                    <p>Expiration date<br />
+                    <select size="1" name="cds_cc_exp_month" tabindex="13">
+                    <option value="" SELECTED>Expire Month</option>
+                    <option value="01" >January</option>
+                    <option value="02" >February</option>
+                    <option value="03" >March</option>
+                    <option value="04" >April</option>
+                    <option value="05" >May</option>
+                    <option value="06" >June</option>
+                    <option value="07" >July</option>
+                    <option value="08" >August</option>
+                    <option value="09" >September</option>
+                    <option value="10" >October</option>
+                    <option value="11" >November</option>
+                    <option value="12" >December</option>
+                    </select>
+                    &nbsp; / &nbsp;
+                    <select name="cds_cc_exp_year" tabindex="14"> 
+                    <option value="" SELECTED>Expire Year</option>
+                    <$CDS_EXPIRE_YEAR_LIST>
+                    </select>
+                    </p><br /> -->
+                    
+                    <div style="display:none">
+<b>Bill Me later</b><br />
+<input type="radio" name="cds_pay_type" value="6" CHECKED class="none" tabindex="15" />
+&nbsp;&nbsp;Send me my two risk-free issues and bill me later.  If I like Wine Spectator, I'll receive 15 more issues and pay $59.95.  My FREE 100 Top Values Guide will be shipped when final payment is received.    If I decide not to subscribe, I'll just write cancel on the invoice or email wsonline@mshanken.com.</p>
+</div>                </td>
+                </tr>
+                <tr>
+                    <td class="top" colspan="2" style="padding-left:10px;">
+                        <br />
+                        <p><b>Wine Spectator may contact me about my subscription via email.</b><br />
+                        <input type="radio" name="cds_use_email" value="Y" CHECKED class="none"  tabindex="16" /> Yes &nbsp;&nbsp;
+                        <input type="radio" name="cds_use_email" value="N"  class="none"/> No</p>
+                        <p><b>Wine Spectator may contact me via email regarding special Wine Spectator<br />promotions and events.</b><br />
+                        <input type="radio" name="cds_opt_in1" value="Y" CHECKED class="none"  tabindex="17" /> Yes &nbsp;&nbsp;
+                        <input type="radio" name="cds_opt_in1" value="N"  class="none"/> No</p>
+                        <p>(You may change your email contact status at any time.)</p>
+					</td>
+                </tr>
+                <tr>
+                <td align="left" colspan="2" style="padding-left:20px;"><Br /></td></tr>
+                <!-- <tr><td class="top" align="left" colspan="2" style="padding-left:20px;"><p class="links"><a href="/servlet/GiftsGateway?cds_mag_code=WNE&cds_page_id=46317"><img src="images/WS-donee-page_13NEW.gif" width="182" height="69" border="0" /></a>&nbsp;&nbsp;  <a href="/servlet/CSGateway?cds_mag_code=WNE"><b>&raquo; Renew</b></a>&nbsp;&nbsp;<a href="/servlet/CSGateway?cds_mag_code=WNE"><b>&raquo; Address Change</b></a>&nbsp;&nbsp;<a href="/servlet/CSGateway?cds_mag_code=WNE"><b>&raquo; Pay Online</b></a>&nbsp;&nbsp;<a href="/servlet/CSGateway?cds_mag_code=WNE"><b>&raquo; Check Subscription</b></a>&nbsp;&nbsp;<a href="https://m1.buysub.com/webapp/wcs/stores/servlet/CategoryDisplay?catalogId=10551&storeId=10551&categoryId=10058 ">
+                <b>&raquo; Back Issues</b></a></td></tr> -->
+                <tr>
+					<td class="top" colspan="3" style="border:#000000 thick;">
+                        <p>
+                        <p align="center">
+                        <input type="submit" name="send" value="Subscribe" onclick="localLink = true"  tabindex="18" style="width:100px; height:35px; font-weight:bold; font-size:16px;" /></p>
+                        <br />			
+                    </td>
+				</tr>
+			</table>	
+		</td>
+	</tr>
+</table>
+</form>
+</div>
+<div id="wrapper">
+	<div id="header" class=""><img src="images/Header_Mobile.jpg" alt="WineSpectator.com Logo" /></div>
+      &nbsp;&nbsp;&nbsp;&nbsp; <B><font color="#000000" style="font-size:20px;"> Introductory Offer!</font></B>
+	<div id="content" class=""></div>
+    <div id="error"><p><$ERROR_ALL></p></div>
+    <div id="container" style="background:#ead48b;">
+		<form action="/servlet/Transaction" method="post">
+      
+        <div id="subscriber" class="">
+        	<h2>2 free issues of Pure Pleasure!</h2>
+            
+            
+Send me my two risk-free issues and bill me later. If I like Wine Spectator, I'll receive 15 more issues and pay $59.95. My FREE 100 Top Values Guide will be shipped when final payment is received.  If I decide not to subscribe, I'll just write cancel on the invoice or email wsonline@mshanken.com.<br /><br />
+            
+            <p><&TERMS_VALUES></p>
+            <p>Canadian/Foreign orders, <a href="/servlet/OrdersGateway?cds_mag_code=WNE&cds_page_id=46286">Click Here</a></p>
+            
+            <p><br /><b>Please enter your information:</b></p>
+        	<fieldset>
+        	<ol class="col-1">
+            	<li class="emailHolder">
+					<label for="cds_email" class="email">E-mail Address:</label>
+					<input name="cds_email" id="cds_email" class="email" value="" maxlength="50" type="text" placeholder="john@doe.com" />
+				</li>
+				<li class="nameHolder">
+					<label for="cds_name" class="name">Full Name:</label>
+					<input name="cds_name" id="cds_name" class="name" value="" maxlength="27" type="text" placeholder="Enter Your Full Name" />
+				</li>
+				<li class="address1Holder">
+					<label for="cds_address_1" class="address1">Address:</label>
+					<input name="cds_address_1" id="cds_address_1" class="address1" value="" maxlength="27" type="text" placeholder="" />
+				</li>
+				<li class="address2Holder">
+					<label for="cds_address_2" class="address2">&nbsp;</label>
+					<input name="cds_address_2" id="cds_address_2" class="address2" value="" maxlength="27" type="text">
+				</li>
+				<li class="cityHolder">
+					<label for="cds_city" class="city">City:</label>
+					<input name="cds_city" id="cds_city" class="city" value="" maxlength="13" type="text">
+				</li>
+				<li class="stateHolder">
+					<label for="cds_state" class="state">State / Province:</label>
+					<span id="subscriberStates">
+						<select name="cds_state" id="cds_state" class="state" size="1">
+							<option value="" SELECTED>Select A State</option>
+                            <$CDS_STATE_LIST>
+						</select>
+					</span>
+				</li>
+				<li class="zipHolder">
+					<label for="cds_zip" class="zip">ZIP Code:</label>
+					<input name="cds_zip" id="cds_zip" class="zip" value="" maxlength="6" type="text">
+				</li>
+				<input type="hidden" name="cds_country" value="United States" />
+            </ol>
+          </fieldset>
+        </div>
+        
+        <div id="subscriberBilling" class="billing">
+          <div style="display:none">
+<b>Bill Me later</b><br />
+<input type="radio" name="cds_pay_type" value="6" CHECKED class="none" tabindex="15" />
+&nbsp;&nbsp;Send me my two risk-free issues and bill me later.  If I like Wine Spectator, I'll receive 15 more issues and pay $59.95.  My FREE 100 Top Values Guide will be shipped when final payment is received.    If I decide not to subscribe, I'll just write cancel on the invoice or email wsonline@mshanken.com.</p>
+</div> 
+               
+        
+        
+        <div id="accpreferences">
+        	<fieldset>
+            	<ol>
+                	
+                    <li><label>Wine Spectator may contact me about my subscription via email.</label>
+                        <input type="radio" name="cds_use_email" value="Y" CHECKED class="none"  tabindex="16" /> Yes &nbsp;&nbsp;
+                        <input type="radio" name="cds_use_email" value="N"  class="none"/> No</p></li>
+                    <li><label>Wine Spectator may contact me via email regarding special Wine Spectator<br />promotions and events.</label>
+                        <input type="radio" name="cds_opt_in1" value="Y" CHECKED class="none"  tabindex="17" /> Yes &nbsp;&nbsp;
+                        <input type="radio" name="cds_opt_in1" value="N"  class="none"/> No</p></li>
+                </ol>
+                <p>(You may change your email contact status at any time.)</p>
+          </fieldset>
+        </div>
+        
+        <div id="other">                    
+            <p><br /><input type="submit" name="send" value="Subscribe" onclick="localLink = true"  tabindex="18"/>            </p>
+		</div>			
+		</form>
+	</div>
+</body>
+<!-- SiteCatalyst code version: H.20.3
+Copyright 1997-2009 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="//www.winespectator.com/js/library/s_code_wso_fpc.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+s.pageName="CDS Subscription Form 78254"
+s.channel="cds"
+s.prop1=""
+s.prop14="guest"
+s.eVar1=""
+s.campaign=""
+s.events="scCheckout"
+s.products=";printsub"
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.20.3 -->
+</html>
